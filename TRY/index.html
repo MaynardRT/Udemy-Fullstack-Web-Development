@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="">
 
         <style>
-            html {
+            /* html {
                 margin: 5px;
                 padding: 5px;
             }
@@ -46,17 +46,36 @@
                 width: 72%;
                 height: 400px;
                 
+            } */
+
+            .grid-container {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 100px 200px 200px;
+                gap: 30px;
             }
-
-
+            .first {
+                grid-column: span 2;
+            }
+            .card {
+                background-color: pink;
+            }
 
         </style>
 
     </head>
     <body>
-        <header>This is a Header!</header>
+        <!-- <header>This is a Header!</header>
         <p class="sidebar">This is a Sidebar</p>
         <p class="main">This is a Main Content</p>
-        <footer>This is a Footer!</footer>
+        <footer>This is a Footer!</footer> -->
+
+        <div class="grid-container">
+            <div class="first card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+        </div>
     </body>
 </html>
